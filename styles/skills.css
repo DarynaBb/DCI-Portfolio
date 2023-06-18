@@ -39,9 +39,9 @@
     margin-bottom: 1rem;
 }
 
-.skills-box-item div {
+/* .skills-box-item div {
     background-color: var(--secondary-blue);
-}
+} */
 
 .skills-bar {
     height: 1rem;    
@@ -174,4 +174,44 @@
 .skills-quote p {
     border-left: 4px solid var(--secondary-blue);
     padding: 3rem;
+}
+
+@media (max-width: 1052px) {
+  .bar-animation1 {
+    animation: bar1 6s ease-in-out infinite;
+    animation-fill-mode: forwards;
+}
+
+.bar-animation2 {
+  animation: bar2 6s ease-in-out infinite;
+  animation-fill-mode: forwards;
+}
+
+.bar-animation3 {
+  animation: bar3 6s ease-in-out infinite;
+  animation-fill-mode: forwards;
+}
+
+.bar-animation4 {
+  animation: bar4 6s ease-in-out infinite;
+  animation-fill-mode: forwards;
+}
+
+.bar-animation5 {
+  animation: bar5 6s ease-in-out infinite;
+  animation-fill-mode: forwards;
+}
+
+.bar-animation6 {
+  animation: bar6 6s ease-in-out infinite;
+  animation-fill-mode: forwards;
+}
+
+.skills-section {
+  margin-top: 7vh;
+}
+
+.skills-section-left-box, .skills-section-right-box {
+  border-top: 2px solid var(--secondary-blue);
+}
 }

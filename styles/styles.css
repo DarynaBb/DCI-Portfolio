@@ -13,6 +13,7 @@
     --secondary-pink: rgb(246, 76, 113);
     --height-link: 3rem;
     --shadow-color: hsl(240 64% 22%);
+    scroll-behavior: smooth;
 }
 
 body {
@@ -21,7 +22,7 @@ body {
     background-color: var(--main-bg-color);
     color: var(--main-txt-color);
     line-height: 1;
-    scroll-padding-top: 10vh;
+    
 }
 
 h1, h2, h3 {
@@ -154,4 +155,16 @@ section {
 width: 50%;
 height: 100%;
 border-right: 2px solid var(--secondary-blue);
+}
+
+@media (max-width:1050px) {
+    section {
+    height: 74vh;
+}
+}
+
+@media (max-width: 768px) {
+    section {
+    height: 74vh;
+}
 }

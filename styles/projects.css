@@ -1,11 +1,11 @@
 .projects-section {
     display: grid;
-    grid-template: 22% 39% 39% / 6% 88% 6%;
+    grid-template: 9vh 22% 34.5% 34.5% / 6% 88% 6%;
 }
 
 .section-title {
     grid-column: 2 / 3;
-    grid-row: 1 / 2;
+    grid-row: 2 / 3;
     border: 4px solid var(--secondary-pink);
 
     display: flex;
@@ -26,12 +26,14 @@
 .projects-aside-left {
     grid-column: 1 / 2;
     grid-row: 2 / 4;
+    grid-row: 3 / 5;
     border-bottom: 2px solid var(--secondary-blue);
 }
 
 .projects-social {
     grid-column: 3 / 4;
     grid-row: 2 / 3;
+    grid-row: 3 / 4;
 }
 
 .projects-social.social {
@@ -41,6 +43,7 @@
 .projects-scroll {
     grid-column: 3 / 4;
     grid-row: 3 / 4;
+    grid-row: 4 / 5;
     border-left: 2px solid var(--secondary-blue);
     border-bottom: 2px solid var(--secondary-blue);
 }
@@ -48,6 +51,7 @@
 .projects-box {
     grid-column: 2 / 3;
     grid-row: 2 / 4;
+    grid-row: 3 / 5;
     border-bottom: 2px solid var(--secondary-blue);
 
     display: grid;
@@ -83,7 +87,6 @@
     object-fit: cover;
     filter: drop-shadow(1px 1px 2px rgb(24, 50, 99))
     drop-shadow(2px 2px 4px rgb(1, 8, 95));
-    
 }
 
 .projects-box-item:hover .overlay {
@@ -96,14 +99,14 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 90%;
-    height: 40%;
+    width: 80%;
+    height: 80%;
     z-index: 4;
     /* background-color:  rgba(255, 255, 255, 0.089);  */
     /* backdrop-filter: blur(4px); */
     /* backdrop-filter: invert(90%); */
-    background-color: var(--main-bg-color);
-    opacity: 0.85;
+    background-color: var(--main-txt-color);
+    opacity: 0.6;
     -webkit-backdrop-filter: blur(4px);
     transition: all 0.5s ease-in;
 }
@@ -128,3 +131,18 @@ a.button:hover {
     border:1px solid rgba( 255,255,255, 0.5)
 }
 
+@media (max-width: 1052px) {
+    .overlay {
+        display: none;
+    }
+
+    .projects-scroll.scroll {
+        display: none;
+    }
+
+    .projects-social.social {
+        grid-row: 2 / 5;
+        justify-content: center;
+        border-bottom: 2px solid var(--secondary-blue);
+    }
+}
